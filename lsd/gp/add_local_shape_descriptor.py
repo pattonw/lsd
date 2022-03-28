@@ -102,10 +102,8 @@ class AddLocalShapeDescriptor(BatchFilter):
                     self.voxel_size,
                     mode='shrink')
 
-            grown_roi = request[self.segmentation].roi.union(context_roi)
-
             deps[self.segmentation] = request[self.descriptor].copy()
-            deps[self.segmentation].roi = grown_roi
+            deps[self.segmentation].roi = context_roi
 
         else:
             self.skip = True
