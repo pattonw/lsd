@@ -20,23 +20,12 @@ setup(
         author_email='funkej@janelia.hhmi.org',
         license='MIT',
         packages=find_packages(),
-        ext_modules=[
-            Extension(
-                'lsd.post.merge_tree',
-                sources=[
-                    'lsd/post/merge_tree.pyx'
-                ],
-                extra_compile_args=['-O3'],
-                language='c++')
-        ],
-        cmdclass={'build_ext': build_ext},
         install_requires=[
             "numpy",
             "scipy",
             "h5py",
             "scikit-image",
             "requests",
-            "cython",
             "gunpowder",
         ]
 )
