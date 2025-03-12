@@ -1,6 +1,6 @@
 import h5py
 import logging
-import mahotas
+# import mahotas
 import numpy as np
 import os
 from lsd.train import LsdExtractor

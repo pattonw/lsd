@@ -1,5 +1,5 @@
 import logging
-import mahotas
+# import mahotas
 import numpy as np
 from lsd.train import LsdExtractor, local_shape_descriptor
 from scipy.ndimage import gaussian_filter, maximum_filter
