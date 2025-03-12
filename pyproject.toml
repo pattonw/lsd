@@ -8,7 +8,7 @@ dependencies = [
     "gunpowder>=1.4.0",
     "h5py>=3.13.0",
     "lsds",
-    "numpy>=2.2.3",
+    "numpy>=2.0.0",
     "requests>=2.32.3",
     "scikit-image>=0.25.2",
     "scipy>=1.15.2",
